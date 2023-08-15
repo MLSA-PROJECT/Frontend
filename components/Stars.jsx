@@ -2,20 +2,16 @@
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random";
+import * as random from "maath/random/dist/maath-random.esm";
 
-const Stars: React.FC<JSX.IntrinsicElements["group"]> = (props) => {
-  const ref = useRef<any>(null); // Use 'any' as the type for the ref
+const Stars = (props) => {
+  const ref = useRef();
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((state, delta) => {
-    const currentRef = ref.current;
-    if (currentRef) {
-      currentRef.rotation.x -= delta / 10;
-      currentRef.rotation.y -= delta / 15;
-    }
+    ref.current.rotation.x -= delta / 10;
+    ref.current.rotation.y -= delta / 15;
   });
-  
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
