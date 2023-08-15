@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
         {/* Open Graph (OG) meta tags for social media sharing */}
         <meta property="og:title" content="MedTech.io - Innovative Health Solutions" />
         <meta property="og:description" content="Discover advanced AI-driven solutions for proactive health management." />
-        <meta property="og:image" content="https://yourwebsite.com/images/medtech-preview-image.jpg" />
+        <meta property="og:image" content="https://github.com/MLSA-PROJECT/Frontend/raw/main/image.png" />
         <meta property="og:url" content="https://mlsa-frontend-beta.vercel.app/" />
         <meta property="og:type" content="website" />
         
@@ -24,7 +24,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="MedTech.io - Innovative Health Solutions" />
         <meta name="twitter:description" content="Discover advanced AI-driven solutions for proactive health management." />
-        <meta name="twitter:image" content="https://yourwebsite.com/images/medtech-preview-image.jpg" />
+        <meta name="twitter:image" content="https://github.com/MLSA-PROJECT/Frontend/raw/main/image.png" />
         
         {/* Other meta tags */}
       </Head>
